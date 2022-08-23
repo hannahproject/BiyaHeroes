@@ -1,0 +1,87 @@
+.container {
+    background-color: #F6F6E9;
+    width: 80%;
+    /*STOPS DIV FROM GROWING ONCE IT REACHES 500px*/
+    max-width: 900px;
+    padding: 30px 35px;
+    text-align: center;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 16px;
+    filter: invert(56%) sepia(6%) saturate(10%) hue-rotate(347deg) brightness(91%) contrast(90%);
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+header img:hover {
+    filter: invert(41%) sepia(99%) saturate(2422%) hue-rotate(1deg) brightness(100%) contrast(107%);
+}
+
+header a {
+    color: #005792;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+.form-one,
+.form-two {
+    width: 50%;
+    padding: 1rem;
+}
+
+/*FORM AREA*/
+
+.form-item {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.form-item label {
+    color: #005792;
+}
+
+.form-item select,
+input {
+    width: 100%;
+    /*TOP (8px) RIGHT BOTTOM (4px) LEFT*/
+    margin: .5em 0 .25em 0;
+    padding: .25em;
+    background-color: #ebebe4;
+    border: 1px solid #ebebe4;
+    font-weight: 300;
+}
+
+/* BUTTON */
+
+.btn {
+    text-align: right;
+}
+
+.btn button {
+    padding: .5em 2em;
+    background-color: #FD5F00;
+    border: none;
+    color: #F6F6E9;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width:690px) {
+    form {
+        flex-direction: column;
+    }
+
+    .form-one,
+    .form-two {
+        width: 100%;
+    }
+}

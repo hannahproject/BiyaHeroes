@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <title>BiyaHeroes - Login</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="container-child">
+            <h2><a href="">BiyaHeroes</a></h2>
+            <p>Log into your account</p>
+        </header>
+
+        <form action="" class="container-child" id="form">
+
+            <div class="form-item">
+                <label for="role">User Role</label>
+                <select name="role" id="role">
+                    <option value="admin-role">Admin</option>
+                    <option value="commuter-role">Commuter</option>
+                    <option value="toda-role">Toda Rep</option>
+                </select>
+                <small></small>              
+            </div>
+
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <small>Error Message</small>
+            </div>
+
+            <div class="form-item">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <small>Error Message</small>
+            </div>
+
+            <div class="btn">
+                <button type="submit">Login</button>   
+            </div>
+        
+        </form>
+
+        <footer class="container-child">
+            <p>Don't have an account? <a href="sign-up.html">Signup</a></p>
+        </footer>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>

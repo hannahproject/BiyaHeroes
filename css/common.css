@@ -1,0 +1,48 @@
+/* STYLING THAT WILL BE PRESENT/USED IN ALL MODULES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #13334C, #005792);
+    background-repeat: no-repeat;
+    height: 100%;
+    /* TO CENTER THE CONTAINER DIV */
+    display: flex;
+    /* TO CENTER THE DIV HORIZONTALLY */
+    justify-content: center;
+    /* TO CENTER THE DIV VERTICALLY */
+    align-items: center;
+    color:#1B1B1A;
+}
+
+/* SUCCESS/ERROR MESSAGE */
+
+.form-item small {
+    font-size: 12px;
+    font-style: italic;
+    visibility: hidden;
+}
+
+.form-item.error input {
+    border-color:#F84F31;
+}
+
+.form-item.error small {
+    color: #F84F31;
+    visibility: visible;
+}
+
+.form-item.success input {
+    border-color: #23C552;
+}
+
+.form-item.success small {
+    color: #23C552;
+}
